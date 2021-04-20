@@ -1,0 +1,3 @@
+model_checkpoint_path: "ATT_GRU_model-840"
+all_model_checkpoint_paths: "ATT_GRU_model-826"
+all_model_checkpoint_paths: "ATT_GRU_model-840"

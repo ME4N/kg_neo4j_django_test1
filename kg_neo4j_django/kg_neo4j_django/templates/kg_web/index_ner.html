@@ -1,0 +1,131 @@
+<html>
+<body>
+<head>
+
+    <meta charset="utf-8">
+    <title>实体识别</title>
+    <link rel="stylesheet" href="../../static/bootstrap337/css/bootstrap-theme.min.css">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="../../static/bootstrap337/css/bootstrap.min.css">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../static/bootstrap337/js/bootstrap.min.js" ></script>
+        <div class="jumbotron">
+          <h1 align="center" style="color:#246f13">实体识别｜关系抽取</h1>
+{#          <p>...</p>#}
+{#          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>#}
+    </div>
+
+
+</head>
+<style>
+    .div0 {
+        position:center;
+        margin-top: 5px;
+        width: 850px;
+        height: 50px;
+        padding: 50px;
+        margin-left: 24%;
+    {#border: 1px solid #050000;#} border-radius: 20px;
+
+    }
+
+    .div1 {
+
+        position: center;
+        width: 650px;
+        height: 450px;
+        padding-top: 0px;
+        padding-left: 85px;
+        padding-right: 85px;
+        margin:0 auto;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .div2 {
+        position:center;
+        width: 500px;
+        height: 80px;
+        padding: 0 auto;
+        border: 1px solid #050000;
+        margin:0 auto;
+        background-color:rgb(255, 255, 255);
+
+    }
+
+    {% load static %}
+    body {
+        margin: 0;
+
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: cover;
+        background-color: rgba(34, 195, 170, 0.02);
+    }
+
+    .main {
+        text-align: center; /*让div内部文字居中*/
+        background-color: #fff;
+        border-radius: 20px;
+        width: 500px;
+        height: 40px;
+        left: 100px;
+    }
+
+    .sentence {
+        margin-left: 80px;
+        margin-top: 10px;
+        width: 550px;
+        height: 50px;
+        border-radius: 20px;
+
+    }
+
+    .button_s {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+
+    }
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="/static/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+<form align="center" class="navbar-form" role="search" action="/ner" method="get" >
+      <div class="form-group" >
+        <input name="sentence" id="sentence" type="text" class="form-control" placeholder="请输入句子:" style="width: 550px;">
+      </div>
+      <button type="submit" class="btn btn-default">识别</button>
+      <button class="btn btn-default" onclick="javascript:location.href='/qindex?back=1'">返回</button>
+</form>
+
+    <div class="div1">
+{#        <h4 style="margin-top:-40px;">输入句子：</h4>{{ sentence }}#}
+
+        <h3  style="color:#246f13">实体识别结果</h3>
+        <div class="div2">
+            {{ ner }}
+        </div>
+
+        <h3  style="color:#246f13"> 关系抽取结果 </h3>
+        <div class="div2">
+             {{ rela }}
+        </div>
+        <h3  style="color:#246f13">实体个数</h3>
+        <h3  style="color:#246f13">old:{{ old_num }}</h3>
+        <h3  style="color:#246f13">new:{{ new_num }}</h3>
+
+
+    </div>
+
+
+
+
+</body>
+</html>

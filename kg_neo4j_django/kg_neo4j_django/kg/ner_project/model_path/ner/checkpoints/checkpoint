@@ -1,0 +1,6 @@
+model_checkpoint_path: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-7550"
+all_model_checkpoint_paths: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-4530"
+all_model_checkpoint_paths: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-5285"
+all_model_checkpoint_paths: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-6040"
+all_model_checkpoint_paths: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-6795"
+all_model_checkpoint_paths: "E:\\zhm\\kg_neo4j_django_test\\kg_neo4j_django\\kg_neo4j_django\\kg\\ner_project/model_path\\ner\\checkpoints/model-7550"
